@@ -17,36 +17,47 @@ export default function TopNavigator({ activeTab, setActiveTab }: Props) {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => setActiveTab("Advanced Script")}>
-        <Text
-          style={[styles.navText, activeTab === "Advanced Script" && styles.activeText]}
-        >
-          Advanced Script
-        </Text>
+      <TouchableOpacity onPress={() => setActiveTab("Advanced Script")}> 
+        <View style={styles.blockContainer}>
+          <Text
+            style={[styles.navText, activeTab === "Advanced Script" && styles.activeText]}
+          >
+            Advanced Script
+          </Text>
+        </View>
       </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  blockContainer: {
+    width: '100%',
+    alignSelf: 'stretch',
+    display: 'flex',
+    backgroundColor: '#11f555ff',
+  },
   topNav: {
     flexDirection: "row",
     justifyContent: "space-around",
     paddingVertical: 15,
-    backgroundColor: "#441414ff",
+    backgroundColor: "#0e0d0dff",
     borderBottomWidth: 1,
-    borderBottomColor: "#ddd",
+    // borderBottomColor: "#fff",
     fontFamily: "Poppins-Regular",
   },
   navText: {
     fontSize: 18,
-    color: "grey",
-    fontWeight: "500",
+    color: "#fff",
+    paddingBottom: 12,
+    fontFamily: "Poppins-Regular",
   },
   activeText: {
     color: "white",
-    borderBottomWidth: 2,
+    borderBottomWidth: 4,
+    width: '100%',
+    textAlign:"center",
     borderBottomColor: "blue",
-    paddingBottom: 2,
+    paddingBottom: 12,
   },
 });

@@ -1,20 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface Props {
     title: string;
     subtitle: string;
     background: any; // image source
+    description?: string; // optional description
 }
 
-export default function CustomCard({ title, subtitle, background }: Props) {
+export default function CustomCard({ title, subtitle, background, description }: Props) {
     return (
-        <ImageBackground source={background} style={styles.card} imageStyle={styles.image}>
-            <View style={styles.overlay}>
-                <Text style={styles.title}>{title}</Text>
-                <Text style={styles.subtitle}>{subtitle}</Text>
+        <SafeAreaView>
+            <ImageBackground source={background} style={styles.card} imageStyle={styles.image}>
+                <View style={styles.overlay}>
+                    <Text style={styles.title}>{title}</Text>
+                    <Text style={styles.subtitle}>{subtitle}</Text>
+                </View>
+            </ImageBackground>
+            <View style={{ padding: 10 }}>
+                {description && <Text style={{ color: '#fff', textAlign: 'center' }}>{description}</Text>}
             </View>
-        </ImageBackground>
+        </SafeAreaView>
     );
 }
 

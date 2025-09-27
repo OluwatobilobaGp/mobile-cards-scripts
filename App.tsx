@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import SmartScript from "./src/screens/SmartScript";
-import AdvavnedScript from "./src/screens/AdvancedScript";
+import AdvancedScript from "./src/screens/AdvancedScript";
 import TopNavigator from "./src/components/TopNavigator";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-// Apply font globally
-
 export default function App() {
-  
   
   const [activeTab, setActiveTab] = useState<"Smart Script" | "Advanced Script">("Smart Script");
 
@@ -19,7 +16,7 @@ export default function App() {
 
       {/* Screen Content */}
       <View style={styles.screen}>
-        {activeTab === "Smart Script" ? <SmartScript /> : <AdvavnedScript />}
+        {activeTab === "Smart Script" ? <SmartScript /> : <AdvancedScript />}
       </View>
     </SafeAreaView>
   );
