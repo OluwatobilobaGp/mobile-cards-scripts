@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     width: '100%',
     alignSelf: 'stretch',
     display: 'flex',
-    backgroundColor: '#11f555ff',
   },
   topNav: {
     flexDirection: "row",

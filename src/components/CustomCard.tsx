@@ -18,9 +18,7 @@ export default function CustomCard({ title, subtitle, background, description }:
                     <Text style={styles.subtitle}>{subtitle}</Text>
                 </View>
             </ImageBackground>
-            <View style={{ padding: 10 }}>
-                {description && <Text style={{ color: '#fff', textAlign: 'center' }}>{description}</Text>}
-            </View>
+            
         </SafeAreaView>
     );
 }

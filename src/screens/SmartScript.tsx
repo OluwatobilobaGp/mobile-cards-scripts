@@ -89,30 +89,30 @@ export default SmartScript;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#020202ff",
     paddingVertical: 10,
     alignItems: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 18,
+    color: '#fff',
     display: 'flex',
     marginBottom: 10,
     paddingHorizontal: 10,
     fontWeight: 'bold',
     justifyContent: 'flex-start',
-    alignItems: 'flex-start',
   },
   listContent: {
     paddingHorizontal: 10, // spacing on left/right
     height: 200, // adjust height as needed
-    backgroundColor: '#161515ff',
     borderRadius: 10,
     paddingVertical: 10,
   },
   descriptionContainer: {
+    display: 'flex',
     marginBottom: 70, 
     justifyContent: 'center', 
-    alignItems: 'center', 
+    alignItems: 'flex-start', 
     backgroundColor: '#535252ff', 
     borderRadius: 10, 
     padding: 10, 
@@ -121,12 +121,13 @@ const styles = StyleSheet.create({
   },
   detailsText: {
     color: '#fff',
-    textAlign: 'center',
+    textAlign: 'left',
+    fontSize: 16,
   },  
   button: {
     width: 410,
     display: 'flex',
-    backgroundColor: '#2563eb',
+    backgroundColor: '#ffffffff',
     paddingVertical: 16,
     borderRadius: 8,
     alignItems: 'center',
@@ -140,14 +141,15 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   buttonText: {
-    color: '#fff',
+    color: '#000000ff',
     fontSize: 18,
+    fontFamily: 'Poppins-Bold',
     fontWeight: 'bold',
     // marginLeft: 8,
   },
   activeCard: {
-    borderWidth: 2,
-    borderColor: 'red',
+    borderWidth: 4,
+    borderColor: 'white',
     borderRadius: 10,
   },
 });

@@ -7,6 +7,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
   
+  
   const [activeTab, setActiveTab] = useState<"Smart Script" | "Advanced Script">("Smart Script");
 
   return (
