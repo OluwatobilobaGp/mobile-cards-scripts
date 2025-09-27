@@ -10,21 +10,28 @@ const SmartScript = () => {
       title: "Write Smarter",
       subtitle: "Boost productivity with AI-powered scripts.",
       background: require("../assets/bg1.jpg"),
-      description: "This is an image showing a person working on a laptop with A1 elements around.",
+      description: "This is an Write Smarter image showing a person working on a laptop with A1 elements around.",
     },
     {
       id: "2",
       title: "Organize Ideas",
       subtitle: "Turn scattered thoughts into structured notes.",
       background: require("../assets/b2.jpg"),
-      description: "This is an image showing a person working on a laptop with A2 elements around.",
+      description: "This is an Organize Ideas image showing a person working on a laptop with A2 elements around.",
     },
     {
       id: "3",
       title: "Stay Inspired",
       subtitle: "Let creativity flow with daily insights.",
       background: require("../assets/b3.jpg"),
-      description: "This is an image showing a person working on a laptop with A3 elements around.",
+      description: "This is an Stay Inspired image showing a person working on a laptop with A3 elements around.",
+    },
+    {
+      id: "4",
+      title: "Stay Desired",
+      subtitle: "Let creativity flow with daily insights.",
+      background: require("../assets/b5.jpeg"),
+      description: "This is an Stay Inspired image showing a person working on a laptop with A4 elements around.",
     },
   ];
 
